@@ -1,0 +1,56 @@
+﻿can_have_dragon_lord_acclamation_succession_law_trigger = {
+	has_ep3_dlc_trigger = yes
+	government_allows = administrative
+	is_independent_ruler = yes
+    has_trait = dragonrider
+}
+
+can_keep_dragon_lord_acclamation_succession_law_trigger = {
+	has_ep3_dlc_trigger = yes
+	trigger_if = {
+		limit = {
+			has_realm_law = dragon_lord_acclamation_succession_law 
+		}
+		OR = {
+			can_have_dragon_lord_acclamation_succession_law_trigger = yes
+		}
+	}
+}
+
+can_change_dragon_lord_acclamation_succession_law_trigger = {
+	has_ep3_dlc_trigger = yes
+}
+
+zz_valyria_freehold_sites = {
+	OR = {
+		barony ?= title:b_the_citadel
+		barony ?= title:b_dragonstone
+	}
+}
+
+title_revocation_standard_valid_showing_failures_only_trigger = {
+	scope:actor = {
+		NOR =  {
+			is_at_war_with = scope:recipient
+			has_truce = scope:recipient
+		}
+		custom_description = {
+			text = "character_interactions_revoke_title_from_ally_without_reason"
+			object = scope:recipient
+			OR = {
+				OR = {
+					NOT = {
+						is_allied_to = scope:recipient
+					}
+					government_has_flag = government_is_freehold
+				}
+				
+				has_revoke_title_reason = scope:recipient
+			}
+		}
+	}
+	scope:recipient = {
+		is_busy_in_events_localised = yes
+		NOT = { has_strong_hook = scope:actor }
+	}
+}

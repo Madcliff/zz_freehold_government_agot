@@ -1,0 +1,117 @@
+﻿l_english: 
+
+### MAA 
+zz_valyria_dragon_swords:0 "Valyrian Foot Men"
+zz_valyria_dragon_swords_flavor:0 "A Heavy Infantry unit of the $game_concept_freehold$. Armed with blades of Valyrian make, and fitted in armour, these troops make a decided showing on the battlefield, where their better equipment tends to be telling in effectiveness."
+zz_valyria_dragon_knights:0 "Valyrian Heavy Cavalry"
+zz_valyria_dragon_knights_flavor:0 "A Heavy Cavalry unit of the $game_concept_freehold$. Equipped with blades and armour of Valyrian make, these elite heavy cavalry can rapidly turn the tide of any battle with their fearsome charges."
+zz_valyria_dragon_bows:0 "Valyrian Dragonbone Bows"
+zz_valyria_dragon_bows_flavor:0 "A Heavy Archer unit of  the $game_concept_freehold$. Fitted with armour of Valyrian make, and bows formed from the bones of dragons, these elite marksman can make short work of the foes of Valyria."
+zz_valyria_dragon_scouts:0 "Valyrian Skirmish Cavalry"
+zz_valyria_dragon_scouts_flavor:0 "A Skirmish Cavalry Unit of the $game_concept_freehold$. Fitted with armour of Valyrian make, and trained in rapid pursuit tactics, these cavalry focus on rapid assault and retreat tactics, with a purpose of bringing frustation to the enemies of Valyria."
+zz_valyria_dragon_spears:0 "Valyrian Heavy Pikeman"
+zz_valyria_dragon_spears_flavor:0 "A Heavy Pikeman unit of the $game_concept_freehold$. In study armour of Valyrian make, and trained to hold the line, these are the mighty anvil upon which the Valyrian hammer will surely fall."
+
+##Game Concepts 
+ game_concept_freehold_government: "Freehold Government"
+ game_concept_freehold_governments: "Freehold Governments"
+ game_concept_freehold: "Freehold"
+ game_concept_freehold_i: "@government_type_administrative!"
+ game_concept_freehold_desc: "$game_concept_freehold$ is a [government_form|E] that appoints [characters|E] as [governors|E], to manage and preside over land, called [provinces|E], on behalf of their [liege|E].\n\n$game_concept_freehold$ Characters have access to [influence|E] and some also have a personal [family_estate|E].\n\nOnly [independent|E] [rulers|E] of an $game_concept_freehold$ [realm|E] have [legitimacy|E], while [vassals|E] do not.\n\n$admin_cannot_declare_internal_wars$"
+
+## Script Values 
+mages_house_desc:0 "House Mages"
+dragonrider_house_desc:0 "House Dragon Riders" 
+
+## Decision
+convert_to_freehold_decision:0 "Establish a Freehold"
+convert_to_freehold_decision_tooltip:0 "Change [government|E] type by becoming [freehold|E]"
+convert_to_freehold_decision_confirm:0 "Adopt Ways of the Freehold"
+# Freehold Governent
+ freehold_government: "Freehold"
+ freehold_government_with_icon: "@government_type_administrative!$freehold_government$"
+ freehold_government_adjective: "Freeholder"
+ freehold_government_realm: "Freehold Realm"
+ freehold_government_desc: "\n$game_concept_freehold_desc$\n\n#F Freehold Government is a government modeled after the Valyrian Freehold where every freeborn landowner had a say in its governance. In truth, power often resided in the hands of powerful noble families referred to as the lords freeholder. The most powerful and influential of these families were the dragonlords, who rode and commanded the great dragons of Valyria.#!"
+
+
+
+
+###Flavour Titles 
+ 
+ zz_count_freehold_male: "Freeholder"
+ zz_count_freehold_female: "Freeholder"
+ county_freehold: "Freeholding"
+ zz_duke_freehold_male: "Lord Freeholder"
+ zz_duke_freehold_female: "Lady Freeholder"
+ duchy_freehold: "Greater Freeholding"
+ zz_duke_king_freehold_male: "Archon"
+ zz_duke_king_freehold_female: "Archoness"
+ kingdom_freehold: "Freehold"
+ zz_emperor_freehold_male: "Lord Archon"
+ zz_emperor_freehold_female: "Lady Archoness"
+ empire_freehold: "Freehold"
+
+## House Unities
+arcane_mage_lords_house_power:0 "Magic Lords"
+arcane_mage_lords_house_power_desc:0 "Mighty lords of the arcane, this familhy prioritises magical power over all else."
+mighty_dragon_lords_house_power:0 "Dragon Lords"
+mighty_dragon_lords_house_power_desc:0 "Trainers of dragons, this family takes most seriously its mighty beasts of war."
+
+
+### POI 
+
+TRAVEL_POINT_OF_INTEREST_TT_poi_valyria_freehold: "Secrets of the Freehold" 
+poi_freehold.visit: "Secrets of the Freehold"
+poi_freehold.effect: "Recover the secrets of forming a government based on the Freehold of Valyria"
+### Events
+zz_valyria_freehold_discovery.9000.t: "Legacy of Lost Valyria"
+zz_valyria_freehold_discovery.9000.desc: "Hidden in an archive you have found a scroll outlining the organisation of the lost Freehold. \nWith relatively minor effort, you could recreate these power structures, and better support your realm and its dragon lords. \nUnder such a structure, it would be those houses who command the fury of the Dragons that would hold the true balance of power in your realm."
+zz_valyria_freehold_discovery.9000.a: "Like Valyria of Old!"
+zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
+
+    ## Goverment
+    game_concept_dragonkeep: "Dragon Keep"
+    game_concept_dragonkeeps: "Dragon Keeps"
+    game_concept_family_dragonkeep: "Family Dragon Keep"
+    game_concept_family_dragonkeeps: "Family Dragon Keeps"
+    game_concept_dragonkeep_desc: "An $game_concept_dragonkeep$ is a type of [domicile|E] held by the [house_head|E] of notable [noble_families|E] within [freehold|E] [realms|E]. They represent private landholdings untied to any particular [landed|E] [title|E].\n\n[estate_buildings|E] may be constructed here to expand the family's wealth and [influence|E], and the $game_concept_dragonkeep$ will be inherited by future generations."
+
+
+    dragonkeep_domicile_title: "The [CHARACTER.GetHouse.GetBaseNameNoTooltip] $game_concept_dragonkeep$"
+    dragonkeep_domicile_type: "$game_concept_estate$"
+    dragonkeep_domicile_type_tooltip: "$DRAGONKEEP$"
+    dragonkeep_domicile_type_possessive: "Dragon Keep's"
+    dragonkeep_move_desc: "#T Move Dragon Keep#!\nMove your [dragonkeep|E] to another [barony|E] within the [realm|E].\n@alert_icon! #alert_trial You will be unable to move it again for [EmptyScope.ScriptValue('estate_move_cooldown_value')|V0] days#!\n\n#S Cost:\n#![GetCostString( DOMICILE_TYPE.GetMoveCost( Character.Self ) )]\n\n#P Click to move your Dragon Keep#!"
+    domicile_dragonkeep: "the [CHARACTER.GetHouse.GetNameNoTooltip] Dragon Keep"
+
+    dragon_lord_acclamation_succession_law:0 "Dragon Lords Acclaimation"
+    dragon_lord_acclamation_succession_law_subname:0 "Acclaimation Sucession, with Dragon Lords having precedence."
+
+    zz_magister_desc:0 "Mage Lord"
+    zz_dragonlord_desc:0 "Dragon Lord"
+
+    library_archives_04_building: "Mage's Study"
+    library_archives_04_domicile_building: "Mage's Archive"
+
+
+ freehold_province_war_law: "[provincial|E] [war|E] Declaration"
+ freehold_province_war_law_singular: "$province_war_law$"
+ freehold_province_war_law_0: "War Declaration Allowed"
+ freehold_province_war_law_0_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] can wage external [wars|E]#!"
+ freehold_province_war_law_1: "War Declaration Restricted"
+ freehold_province_war_law_1_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 Only [governors|E] with [GetSubjectContractType( 'administrative_themes' ).GetObligationNameShort( 'admin_theme_frontier' )] and [GetSubjectContractType( 'administrative_themes' ).GetObligationNameShort( 'admin_theme_naval' )] [province_administration|E] can wage external [wars|E]#!"
+ freehold_province_war_law_2: "War Declaration Approval"
+ freehold_province_war_law_2_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 Only [governors|E] with [GetSubjectContractType( 'administrative_themes' ).GetObligationNameShort( 'admin_theme_frontier' )] and [GetSubjectContractType( 'administrative_themes' ).GetObligationNameShort( 'admin_theme_naval' )] [province_administration|E] can wage external [wars|E] but must request permission to do so#!"
+ freehold_province_war_law_3: "War Declaration Banned"
+ freehold_province_war_law_3_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] #bold cannot#! wage external [wars|E]#!"
+ 
+ freehold_province_border_law: "[provincial|E] Border Policy"
+ freehold_province_border_law_singular: "$province_border_law$"
+ freehold_province_border_law_0: "Tentative Border Policy"
+ freehold_province_border_law_0_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] are free to use the [GetScheme('dispute_border').GetTypeName] and [GetScheme('subsume_province').GetTypeName] [schemes|E]#!"
+ freehold_province_border_law_1: "Limited Border Policy"
+ freehold_province_border_law_1_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] can use the [GetScheme('dispute_border').GetTypeName] and [GetScheme('subsume_province').GetTypeName] [schemes|E] only if they belong to a [powerful|E] or [dominant_family|E]#!"
+ freehold_province_border_law_2: "Fixed Border Policy"
+ freehold_province_border_law_2_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] #bold cannot#! use the [GetScheme('dispute_border').GetTypeName] and [GetScheme('subsume_province').GetTypeName] [schemes|E]#!"
+ 

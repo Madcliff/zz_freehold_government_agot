@@ -1,0 +1,26 @@
+﻿poi_valyria_freehold = {
+	build_province_list = {
+		every_province = { 
+			limit = {
+				zz_valyria_freehold_sites = yes
+			}
+			add_to_list = provinces
+		}
+
+		
+	}
+	
+	on_visit = {
+		send_interface_toast = {
+			title = poi_freehold.visit
+			left_icon = root
+			custom_tooltip = poi_freehold.effect
+			trigger_event =  zz_valyria_freehold_discovery.9000
+			
+			traveler_travel_xp_effect = {
+				MIN = 3
+				MAX = 5
+			}
+		}
+	}
+}

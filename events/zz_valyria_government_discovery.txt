@@ -1,0 +1,46 @@
+﻿namespace = zz_valyria_freehold_discovery
+
+#You read a book of magic. 
+zz_valyria_freehold_discovery.9000 = {
+	type = character_event
+	title = zz_valyria_freehold_discovery.9000.t
+	desc = zz_valyria_freehold_discovery.9000.desc
+	theme = university
+	left_portrait = root
+
+
+	immediate = {
+
+	}
+
+	trigger = {
+		NOT = { 
+			has_character_flag = zz_valyria_discovery
+		}
+	}
+
+	option = {
+		name = zz_valyria_freehold_discovery.9000.a
+		trigger = {
+			is_ai = no
+		}
+        add_character_flag = zz_valyria_discovery
+        add_character_flag = zz_valyria_freehold
+	}
+	option = {
+		name = zz_valyria_freehold_discovery.9000.b
+        trigger = {
+			is_ai = no
+		}
+        add_character_flag = zz_valyria_discovery
+	}
+
+	option = {
+		name = zz_valyria_freehold_discovery.9000.zz
+		trigger = {
+			is_ai = yes 
+		}
+			is_ai = yes 
+
+	}
+}
