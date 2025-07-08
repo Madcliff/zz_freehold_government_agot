@@ -1,7 +1,7 @@
 ﻿### Estate Main Building - The Villa
 dragonkeep_main_01 = {
 	slot_type = main
-	internal_slots = 2
+	internal_slots = 5
 	construction_time = 730
 	allowed_domicile_types = { dragonkeep}
 
@@ -63,7 +63,7 @@ dragonkeep_main_01 = {
 
 dragonkeep_main_02 = {
 	slot_type = main
-	internal_slots = 4
+	internal_slots = 7
 	construction_time = 730
 	allowed_domicile_types = { dragonkeep}
 	previous_building = dragonkeep_main_01
@@ -135,7 +135,7 @@ dragonkeep_main_02 = {
 
 dragonkeep_main_03 = {
 	slot_type = main
-	internal_slots = 6
+	internal_slots = 8
 	construction_time = 730
 	allowed_domicile_types = { dragonkeep}
 	previous_building = dragonkeep_main_02
@@ -208,7 +208,7 @@ dragonkeep_main_03 = {
 
 dragonkeep_main_04 = {
 	slot_type = main
-	internal_slots = 8
+	internal_slots = 9
 	construction_time = 730
 	allowed_domicile_types = { dragonkeep}
 	previous_building = dragonkeep_main_03
@@ -281,7 +281,7 @@ dragonkeep_main_04 = {
 
 dragonkeep_main_05 = {
 	slot_type = main
-	internal_slots = 10
+	internal_slots = 12
 	construction_time = 730
 	allowed_domicile_types = { dragonkeep}
 	previous_building = dragonkeep_main_04

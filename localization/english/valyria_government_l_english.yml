@@ -149,3 +149,83 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
     building_type_valyrian_tower_06_desc 
     building_valyrian_tower_06:0 "Valyrian Spires" 
     building_valyrian_tower_06_desc:0 "" 
+
+
+
+ dragonkeep_estate_main_01_domicile_building: "Villa"
+ dragonkeep_estate_main_02_domicile_building: "Manor"
+ dragonkeep_estate_main_03_domicile_building: "Mansion"
+ dragonkeep_estate_main_04_domicile_building: "Estate"
+ dragonkeep_estate_main_05_domicile_building: "Grand Estate"
+ 
+ dragonkeep_living_quarters_01_domicile_building: "Fine Living Quarters"
+ dragonkeep_living_quarters_02_domicile_building: "Luxurious Bedchambers"
+ dragonkeep_living_quarters_03_domicile_building: "Statuary Courtyards"
+ dragonkeep_living_quarters_04_domicile_building: "Sumptuous Decorations"
+ 
+ dragonkeep_trophy_room_01_domicile_building: "Trophy Room"
+ dragonkeep_trophy_room_02_domicile_building: "Trophy Displays"
+ dragonkeep_trophy_room_03_domicile_building: "War Table"
+ dragonkeep_trophy_room_04_domicile_building: "Weapon Collection"
+ 
+ dragonkeep_office_01_domicile_building: "Private Study"
+ dragonkeep_office_02_domicile_building: "Courier's Office"
+ dragonkeep_office_03_domicile_building: "Clerk's Office"
+ dragonkeep_office_04_domicile_building: "Administrative Office"
+ 
+ dragonkeep_servants_quarters_01_domicile_building: "Servant's Quarters"
+ dragonkeep_servants_quarters_02_domicile_building: "Secluded Hallways"
+ dragonkeep_servants_quarters_03_domicile_building: "Generous Staff Housing"
+ dragonkeep_servants_quarters_04_domicile_building: "Chamberlain's Offices"
+ 
+ dragonkeep_library_01_domicile_building: "Book Collection"
+ dragonkeep_library_02_domicile_building: "Library"
+ dragonkeep_library_observatory_03_domicile_building: "Observatory"
+ dragonkeep_library_observatory_04_domicile_building: "Famed Observatory"
+ dragonkeep_library_education_03_domicile_building: "Tutor's Office"
+ dragonkeep_library_education_04_domicile_building: "Education Hall"
+ dragonkeep_library_archives_03_domicile_building: "Mage's Study"
+ dragonkeep_library_archives_04_domicile_building: "Scroll Archives"
+ 
+ dragonkeep_bath_01_domicile_building: "Bath"
+ dragonkeep_bath_02_domicile_building: "Bathhouse"
+ dragonkeep_bath_03_domicile_building: "Steam Baths"
+ dragonkeep_bath_04_domicile_building: "Pleasure Houses"
+ 
+ dragonkeep_guest_room_01_domicile_building: "Guest Room"
+ dragonkeep_guest_room_02_domicile_building: "Guest Chambers"
+ dragonkeep_guest_room_03_domicile_building: "Large Guest Chambers"
+ dragonkeep_guest_room_04_domicile_building: "Visitor Wing"
+ dragonkeep_guest_room_05_domicile_building: "Spacious Visitor Wing"
+ dragonkeep_guest_room_06_domicile_building: "Luxurious Visitor Wing"
+ 
+ dragonkeep_wine_cellar_01_domicile_building: "Wine Room"
+ dragonkeep_wine_cellar_02_domicile_building: "Wine Cellar"
+ dragonkeep_wine_cellar_03_domicile_building: "Immense Wine Cellar"
+ 
+ dragonkeep_courtyard_01_domicile_building: "Courtyard"
+ dragonkeep_courtyard_02_domicile_building: "Large Courtyard"
+ dragonkeep_courtyard_03_domicile_building: "Grand Courtyard"
+ dragonkeep_courtyard_04_domicile_building: "Majestic Courtyard"
+ 
+ dragonkeep_prison_01_domicile_building: "Prison Cell"
+ dragonkeep_prison_02_domicile_building: "Prison"
+ dragonkeep_prison_03_domicile_building: "Oubliette"
+ dragonkeep_prison_04_domicile_building: "Torture Chamber"
+
+ dragonkeep_reception_hall_01_domicile_building: "Reception Hall"
+ dragonkeep_reception_hall_02_domicile_building: "Grand Reception Hall"
+ dragonkeep_reception_hall_03_domicile_building: "Grandiose Pavilion"
+ dragonkeep_reception_hall_04_domicile_building: "Regal Ballroom"
+ dragonkeep_reception_hall_05_domicile_building: "Imperial Belvedere"
+
+ dragonkeep_cabinet_of_curiosities_01_domicile_building: "Cabinet of Curiosities"
+ dragonkeep_cabinet_of_curiosities_02_domicile_building: "Hall of Wonders"
+ dragonkeep_cabinet_of_curiosities_03_domicile_building: "Gallery of Marvels"
+
+
+ dragonkeep_grand_solar_01_domicile_building: "Rustic Hearth"
+ dragonkeep_grand_solar_02_domicile_building: "Family Sitting Rooms"
+ dragonkeep_grand_solar_03_domicile_building: "Spacious Family Solar"
+ dragonkeep_grand_solar_04_domicile_building: "Salon of Heirlooms"
+ 
