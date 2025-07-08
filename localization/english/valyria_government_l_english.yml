@@ -80,7 +80,7 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
 
     dragonkeep_domicile_title: "The [CHARACTER.GetHouse.GetBaseNameNoTooltip] $game_concept_dragonkeep$"
     dragonkeep_domicile_type: "$game_concept_estate$"
-    dragonkeep_domicile_type_tooltip: "$DRAGONKEEP$"
+    dragonkeep_domicile_type_tooltip: "$game_concept_dragonkeep$"
     dragonkeep_domicile_type_possessive: "Dragon Keep's"
     dragonkeep_move_desc: "#T Move Dragon Keep#!\nMove your [dragonkeep|E] to another [barony|E] within the [realm|E].\n@alert_icon! #alert_trial You will be unable to move it again for [EmptyScope.ScriptValue('estate_move_cooldown_value')|V0] days#!\n\n#S Cost:\n#![GetCostString( DOMICILE_TYPE.GetMoveCost( Character.Self ) )]\n\n#P Click to move your Dragon Keep#!"
     domicile_dragonkeep: "the [CHARACTER.GetHouse.GetNameNoTooltip] Dragon Keep"
@@ -115,3 +115,37 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
  freehold_province_border_law_2: "Fixed Border Policy"
  freehold_province_border_law_2_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] #bold cannot#! use the [GetScheme('dispute_border').GetTypeName] and [GetScheme('subsume_province').GetTypeName] [schemes|E]#!"
  
+    building_type_zz_mages_tower_tower_01:0 "Mage's Spire"
+    building_type_zz_mages_tower_tower_01_desc:0 "A mighty tower, reaching far into the heavens, filled with acolytes and apprentices singing their sorcerous chants, generating arcane energies that crackle and burn."
+    building_zz_mages_tower_tower_01:0 "Mage's Spire"
+    building_zz_mages_tower_tower_01_desc:0 ""
+
+    building_type_valyrian_tower_01:0 "Valyrian Spires"
+    building_type_valyrian_tower_01_desc 
+    building_valyrian_tower_01:0 "Valyrian Spires" 
+    building_valyrian_tower_01_desc:0 "" 
+
+    building_type_valyrian_tower_02:0 "Valyrian Spires"
+    building_type_valyrian_tower_02_desc 
+    building_valyrian_tower_02:0 "Valyrian Spires" 
+    building_valyrian_tower_02_desc:0 "" 
+
+    building_type_valyrian_tower_03:0 "Valyrian Spires"
+    building_type_valyrian_tower_03_desc 
+    building_valyrian_tower_03:0 "Valyrian Spires" 
+    building_valyrian_tower_03_desc:0 "" 
+
+    building_type_valyrian_tower_04:0 "Valyrian Spires"
+    building_type_valyrian_tower_04_desc 
+    building_valyrian_tower_04 
+    building_valyrian_tower_04_desc:0 "" 
+
+    building_type_valyrian_tower_05:0 "Valyrian Spires"
+    building_type_valyrian_tower_05_desc 
+    building_valyrian_tower_05:0 "Valyrian Spires" 
+    building_valyrian_tower_05_desc:0 "" 
+
+    building_type_valyrian_tower_06:0 "Valyrian Spires"
+    building_type_valyrian_tower_06_desc 
+    building_valyrian_tower_06:0 "Valyrian Spires" 
+    building_valyrian_tower_06_desc:0 "" 
