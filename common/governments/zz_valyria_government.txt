@@ -15,7 +15,7 @@
         subject_men_at_arms = yes
     }
 
-    domicile_type = estate 
+    domicile_type = dragonkeep 
 
     fallback = 4
 	can_get_government = { 
