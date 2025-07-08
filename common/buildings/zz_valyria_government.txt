@@ -1,0 +1,205 @@
+zz_mages_tower_tower_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder.capital_province = this
+		scope:holder = {
+			has_trait = zz_magister
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+		fort_level = 4
+	}
+	county_holding_modifier = {
+		holding = city_holding
+		income_mult = 1
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	flag = travel_point_of_interest_economic
+}
+
+
+valyrian_tower_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_02
+
+}
+valyrian_tower_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_03
+
+}
+valyrian_tower_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_04
+
+}
+valyrian_tower_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_05
+
+}
+valyrian_tower_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_06
+}
+valyrian_tower_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_bleeding_tower.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		government_has_flag = government_is_freehold
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
