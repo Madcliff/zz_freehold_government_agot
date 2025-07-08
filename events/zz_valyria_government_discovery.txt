@@ -40,7 +40,6 @@ zz_valyria_freehold_discovery.9000 = {
 		trigger = {
 			is_ai = yes 
 		}
-			is_ai = yes 
 
 	}
 }

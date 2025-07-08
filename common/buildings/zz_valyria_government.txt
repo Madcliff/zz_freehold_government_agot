@@ -1,4 +1,4 @@
-zz_mages_tower_tower_01 = {
+﻿zz_mages_tower_tower_01 = {
 	construction_time = slow_construction_time
 
 	type_icon = "icon_bleeding_tower.dds"

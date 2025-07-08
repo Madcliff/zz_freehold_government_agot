@@ -121,32 +121,32 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
     building_zz_mages_tower_tower_01_desc:0 ""
 
     building_type_valyrian_tower_01:0 "Valyrian Spires"
-    building_type_valyrian_tower_01_desc 
+    building_type_valyrian_tower_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
     building_valyrian_tower_01:0 "Valyrian Spires" 
     building_valyrian_tower_01_desc:0 "" 
 
     building_type_valyrian_tower_02:0 "Valyrian Spires"
-    building_type_valyrian_tower_02_desc 
+    building_type_valyrian_tower_02_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards."
     building_valyrian_tower_02:0 "Valyrian Spires" 
     building_valyrian_tower_02_desc:0 "" 
 
     building_type_valyrian_tower_03:0 "Valyrian Spires"
-    building_type_valyrian_tower_03_desc 
+    building_type_valyrian_tower_03_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards."
     building_valyrian_tower_03:0 "Valyrian Spires" 
     building_valyrian_tower_03_desc:0 "" 
 
     building_type_valyrian_tower_04:0 "Valyrian Spires"
-    building_type_valyrian_tower_04_desc 
-    building_valyrian_tower_04 
+    building_type_valyrian_tower_04_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards."
+    building_valyrian_tower_04:0 "Valyrian Spires"
     building_valyrian_tower_04_desc:0 "" 
 
     building_type_valyrian_tower_05:0 "Valyrian Spires"
-    building_type_valyrian_tower_05_desc 
+    building_type_valyrian_tower_05_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards."
     building_valyrian_tower_05:0 "Valyrian Spires" 
     building_valyrian_tower_05_desc:0 "" 
 
     building_type_valyrian_tower_06:0 "Valyrian Spires"
-    building_type_valyrian_tower_06_desc 
+    building_type_valyrian_tower_06_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
     building_valyrian_tower_06:0 "Valyrian Spires" 
     building_valyrian_tower_06_desc:0 "" 
 
