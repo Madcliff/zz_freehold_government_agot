@@ -2846,3 +2846,5 @@ dragonkeep_grand_solar_04 = {
 		intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_villa_byzantine_mask.dds"
 	}
 }
+
+
