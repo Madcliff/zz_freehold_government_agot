@@ -25,25 +25,25 @@
 			}
 			if = {
 				limit = {
-					domicile ?= { has_domicile_building_or_higher = estate_main_05 }
+					domicile ?= { has_domicile_building_or_higher = dragonkeep_main_05 }
 				}
 				add = 80
 			}
 			else_if = {
 				limit = {
-					domicile ?= { has_domicile_building_or_higher = estate_main_04 }
+					domicile ?= { has_domicile_building_or_higher = dragonkeep_main_04 }
 				}
 				add = 60
 			}
 			else_if = {
 				limit = {
-					domicile ?= { has_domicile_building_or_higher = estate_main_03 }
+					domicile ?= { has_domicile_building_or_higher = dragonkeep_main_03 }
 				}
 				add = 40
 			}
 			else_if = {
 				limit = {
-					domicile ?= { has_domicile_building_or_higher = estate_main_02 }
+					domicile ?= { has_domicile_building_or_higher = dragonkeep_main_02 }
 				}
 				add = 20
 			}

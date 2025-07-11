@@ -1703,7 +1703,7 @@ dragonkeep_barracks_03 = {
 	previous_building = dragonkeep_barracks_02
 
 	can_construct = {
-		estate_can_construct_dragonkeep_barracks_03_trigger = yes
+		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_02 }
 	}
 
 	cost = {
@@ -1784,7 +1784,7 @@ dragonkeep_barracks_04 = {
 	previous_building = dragonkeep_barracks_03
 
 	can_construct = {
-		estate_can_construct_dragonkeep_barracks_04_trigger = yes
+		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_03 }
 	}
 
 	cost = {
@@ -1865,7 +1865,7 @@ dragonkeep_barracks_05 = {
 	previous_building = dragonkeep_barracks_04
 
 	can_construct = {
-		estate_can_construct_dragonkeep_barracks_05_trigger = yes
+		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_04 }
 	}
 
 	cost = {
@@ -1946,7 +1946,7 @@ dragonkeep_barracks_06 = {
 	previous_building = dragonkeep_barracks_05
 
 	can_construct = {
-		estate_can_construct_dragonkeep_barracks_06_trigger = yes
+		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_05 }
 	}
 
 	cost = {
@@ -8972,7 +8972,7 @@ dragonkeep_vineyard_03 = {
 	previous_building = dragonkeep_vineyard_02
 
 	can_construct = {
-		estate_can_construct_dragonkeep_vineyard_03_trigger = yes
+		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_02 }
 	}
 
 	cost = {
