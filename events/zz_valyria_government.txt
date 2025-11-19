@@ -12,16 +12,7 @@ char_interaction.0111 = {
 	sender = scope:actor
 
 	immediate = {
-		switch = {
-			trigger = government_has_flag 
-			government_is_freehold = {
-				change_to_freehold_effect  = yes
-			}
-			fallback = {
-				change_to_administrative_effect = yes
-			}
-		}
-		
+		change_to_administrative_effect = yes
 	}
 
 	option = {
@@ -40,7 +31,7 @@ zz_char_interaction.0111 = {
 	sender = scope:actor
 
 	immediate = {
-		change_to_freehold_effect = yes
+		change_to_administrative_effect = yes
 	}
 
 	option = {
@@ -105,7 +96,12 @@ zz_ep3_decisions_event.4060 = {
 	override_background = { reference = throne_room }
 	left_portrait = {
 		character = root
-		animation = scepter
+		#AGOT Disabled
+		#triggered_animation = {
+		#	trigger = { religion = religion:christianity_religion }
+		#	animation = scepter # anim uses crucifix scepter
+		#}
+		animation = war_over_tie
 	}
 	lower_right_portrait = {
 		character = scope:obstinate_vassal
@@ -120,12 +116,20 @@ zz_ep3_decisions_event.4060 = {
 
 	immediate = {
 		show_as_tooltip = {
-			change_government = freehold_government
+			switch = {
+				trigger = has_government
+				freehold_government = { change_government = freehold_government }
+			 	japan_administrative_government = { change_government = japan_administrative_government }
+			 	celestial_government = { change_government = celestial_government }
+			 	meritocratic_government = { change_government = meritocratic_government }
+			 	steppe_admin_government = { change_government = steppe_admin_government }
+			 	fallback = { change_government = administrative_government }
+			}
 			if = {
 				limit = {
 					#AGOT Disabled
-					#NOT = { has_character_flag = latin_emp_force_admin_flag }
-					is_independent_ruler = yes
+					# NOT = { has_character_flag = latin_emp_force_admin_flag }
+					top_liege = this
 				}
 				add_character_modifier = { modifier = first_admin_emperor }
 			}
@@ -216,37 +220,95 @@ zz_ep3_decisions_event.4065 = {
 	desc = ep3_decisions_event.4065.desc
 	sender = {
 		character = scope:actor
-		animation = scepter
+		#AGOT Disabled
+		#triggered_animation = {
+		#	trigger = { religion = religion:christianity_religion }
+		#	animation = scepter # anim uses crucifix scepter
+		#}
+		animation = war_over_tie
 	}
 	option = {
 		name = ep3_decisions_event.4065.a
 		trigger = {
-			ep3_vassal_will_become_admin = yes
+			OR = {
+				ep3_vassal_will_become_admin = yes
+				#AGOT Disabled
+				# exists = scope:great_yuan_ruler
+			}
 		}
-		change_government = freehold_government
-		hidden_effect = { #This again only converts subvassals if they are AI - this event should also have triggered for other humans down the chain.
-			every_vassal = { #Everyone below also converts (could be Counts, could be Dukes)
-				limit = {
-					ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
-					is_ai = yes
-				}	
-				change_to_freehold_effect  = yes
-				every_vassal = { #Everyone below also converts (Could be Counts, could be Barons)
+		change_to_administrative_effect = yes
+		#Specifically for when great yuan is formed
+		#AGOT Disabled
+		# if = {
+		# 	limit = {
+		# 		exists = scope:great_yuan_ruler
+		# 	}
+		# 	hidden_effect = { #This again only converts subvassals if they are AI - this event should also have triggered for other humans down the chain.
+		# 		every_vassal = { #Everyone below also converts (could be Counts, could be Dukes)
+		# 			limit = {
+		# 				tgp_mongol_vassal_will_become_admin = yes #We still don't want mayors and bishops
+		# 				is_ai = yes
+		# 			}	
+		# 			change_to_administrative_effect = yes
+		# 			every_vassal = { #Everyone below also converts (Could be Counts, could be Barons)
+		# 				limit = {
+		# 					tgp_mongol_vassal_will_become_admin = yes #We still don't want mayors and bishops
+		# 					is_ai = yes
+		# 				}	
+		# 				change_to_administrative_effect = yes
+		# 				every_vassal = { #Everyone below also converts (could be Barons)
+		# 					limit = {
+		# 						tgp_mongol_vassal_will_become_admin = yes #We still don't want mayors and bishops
+		# 						is_ai = yes
+		# 					}	
+		# 					change_to_administrative_effect = yes
+		# 					every_vassal = { #Everyone below also converts (could be Barons)
+		# 						limit = {
+		# 							tgp_mongol_vassal_will_become_admin = yes #We still don't want mayors and bishops
+		# 							is_ai = yes
+		# 						}	
+		# 						change_to_administrative_effect = yes
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		#Firing from normal admin creation
+		#AGOT Disabled
+		# else = {
+			hidden_effect = { #This again only converts subvassals if they are AI - this event should also have triggered for other humans down the chain.
+				every_vassal = { #Everyone below also converts (could be Counts, could be Dukes)
+					limit = {
+						ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+						is_ai = yes
+					}	
+					change_to_administrative_effect = yes
+					every_vassal = { #Everyone below also converts (Could be Counts, could be Barons)
 						limit = {
 							ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
 							is_ai = yes
 						}	
-						change_to_freehold_effect = yes
+						change_to_administrative_effect = yes
 						every_vassal = { #Everyone below also converts (could be Barons)
 							limit = {
 								ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
 								is_ai = yes
 							}	
-							change_to_freehold_effect = yes
+							change_to_administrative_effect = yes
+							every_vassal = { #Everyone below also converts (could be Barons)
+								limit = {
+									ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+									is_ai = yes
+								}	
+								change_to_administrative_effect = yes
+							}
 						}
 					}
+				}
 			}
-		}
+		#AGOT Disabled
+		# }
 	}
 	option = {
 		name = ep3_decisions_event.4065.b

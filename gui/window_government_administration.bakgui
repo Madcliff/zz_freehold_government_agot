@@ -595,7 +595,7 @@ types GovernmentAdministrationThemes
 		}
 
 		button = {
-			visible = "[Or( Not(Title.GetHolder.IsValid), And( And( Not( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) )), Not(Title.GetHolder.IsPlayerInteractionValid('demand_admin_interaction'))), Title.GetHolder.GetLiege.IsPlayer  ) ) ]"
+			visible = "[Or( Not(Title.GetHolder.IsValid),  And( And( Not( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) )), Not(Title.GetHolder.IsPlayerInteractionValid('demand_admin_interaction'))), Title.GetHolder.GetLiege.IsPlayer  ) ) ]"
 			size = { 100% 100% }
 			onclick = "[DefaultOnCoatOfArmsClick(Title.GetID)]"
 		}
@@ -721,7 +721,8 @@ types GovernmentAdministrationThemes
 
 			# Non-Admin item
 			widget = {
-				visible = "[Not( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) ) )]"
+				visible = "[Not( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) ))]"
+				#visible = "[Not( IsAdministrativeRuler( Title.GetHolder ) )]"
 
 				size = { 0 38 }
 				layoutpolicy_horizontal = expanding
@@ -763,7 +764,7 @@ types GovernmentAdministrationThemes
 
 			# Admin item
 			widget = {
-				visible = "[Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) )]"
+				visible = "[Or( Not(Title.GetHolder.IsValid),  And( And( Not( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) )), Not(Title.GetHolder.IsPlayerInteractionValid('demand_admin_interaction'))), Title.GetHolder.GetLiege.IsPlayer  ) ) ]"
 				datacontext = "[AdministrativeTitleItem.GetPrimaryContractAndObligationItem]"
 				datacontext = "[PrimaryContractAndObligation.GetObligationLevel]"
 
@@ -837,7 +838,7 @@ types GovernmentAdministrationThemes
 
 				hbox = {
 					datacontext = "[Title.GetHolder]"
-					visible = "[And( Or( IsAdministrativeRuler(Title.GetHolder), GovernmentAdministrationWindow.GetTitle.GetHolder.GetGovernment.HasGovernmentFlag( 'government_is_freehold' ) ), DataModelHasItems( AdministrativeTitleItem.GetRegiments ) )]"
+					visible = "[And( IsAdministrativeRuler( Title.GetHolder ), DataModelHasItems( AdministrativeTitleItem.GetRegiments ) )]"
 
 					spacing = 5
 

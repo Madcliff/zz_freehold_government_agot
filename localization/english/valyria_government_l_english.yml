@@ -152,11 +152,11 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
 
 
 
- dragonkeep_main_01_domicile_building: "Villa"
- dragonkeep_main_02_domicile_building: "Manor"
- dragonkeep_main_03_domicile_building: "Mansion"
- dragonkeep_main_04_domicile_building: "Estate"
- dragonkeep_main_05_domicile_building: "Grand Estate"
+ dragonkeep_main_01_domicile_building: "Dragonlord's Villa"
+ dragonkeep_main_02_domicile_building: "Dragonlord's Manor"
+ dragonkeep_main_03_domicile_building: "Dragonlord's Mansion"
+ dragonkeep_main_04_domicile_building: "Dragonlord's Estate"
+ dragonkeep_main_05_domicile_building: "Dragonlord's Grand Estate"
  
  dragonkeep_living_quarters_01_domicile_building: "Fine Living Quarters"
  dragonkeep_living_quarters_02_domicile_building: "Luxurious Bedchambers"

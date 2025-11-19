@@ -3,7 +3,6 @@
         create_cadet_branches = yes
         rulers_should_have_dynasty = yes
         dynasty_named_realms = no
-        royal_court = yes
         administrative = yes
         landless_playable = yes
         legitimacy = yes
@@ -13,13 +12,27 @@
         inherit_from_dynastic_government = no
         sticky_government = yes
         subject_men_at_arms = yes
+        house_aspirations = yes
+        noble_families = yes
+        admin_allows_holding_multiple_primary_tier_titles = yes
+        treasury = yes
+		replace_gold_cost_by_treasury = yes
+        merit = yes 
     }
+
+    royal_court = any
+    blocked_subject_courts = { meritocratic_government celestial_government japan_administrative_government administrative_government steppe_admin_government }
+
+    main_administrative_tier = county
+	min_appointment_tier = county
+	minimum_provincial_maa_tier = county
+    administrative_title_maa_setup = vassals_and_top_liege
 
     domicile_type = dragonkeep 
 
     fallback = 4
 	can_get_government = { 
-		
+		has_character_flag = zz_valyria_freehold
 	}
     primary_holding = city_holding
     valid_holdings = { castle_holding city_holding church_holding }
@@ -42,17 +55,36 @@
 		active_accolades = -1
 		title_creation_cost_mult = -0.5
     }
+    top_liege_character_modifier = {
+		# 85% of vassal income goes to the treasury
+		monthly_treasury_from_vassals = 0.85
+		men_at_arms_maintenance = 1.5
+		men_at_arms_recruitment_cost = 1
+	}
 
     # Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
-    flag = government_is_freehold
-    flag = government_is_administrative
-    flag = government_is_default #For grouping governments that should use the regular lifestyle perks.
-    flag = government_is_settled
-    flag = government_can_use_tributary_men_at_arms
+    flags = {
+        government_is_freehold
+        government_is_administrative
+        government_can_use_tributary_men_at_arms
 
-    # These flags only exist for loc and in-game descriptions
-    flag = government_has_influence
-    flag = government_has_title_men_at_arms
-    flag = government_has_powerful_families
+         # These flags only exist for loc and in-game descriptions
+        government_has_influence
+        government_has_treasury
+        government_has_title_men_at_arms
+        government_has_powerful_families
+        government_is_settled
+        government_uses_domicile_but_not_adventurer
+        government_uses_domain_limit
+        government_uses_admin_province_obligations
+    }
+    mechanic_type = administrative
     color = { 72 6 92 }
+    
+    currency_levels_cap = {
+        piety = 5
+		prestige = 5
+		influence = 5
+		merit = 9
+	}
 } 
