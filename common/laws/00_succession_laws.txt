@@ -14,7 +14,14 @@
 
 	confederate_partition_succession_law = {
 		can_keep = {
-			always = yes
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_japan_feudal
+					tgp_realm_has_ceremonial_liege_trigger = yes
+				}
+				is_independent_ruler = no
+			}
+			trigger_else = { always = yes } # for readability
 		}
 		can_pass = {
 			can_change_partition_succession_law_trigger = yes
@@ -196,8 +203,7 @@
 				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
 				historical_succession_access_single_heir_dynasty_house_trigger = yes
 			}
-			#AGOT Disabled
-			#government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal
 			culture = {
 				#AGOT Modified
 				#has_innovation = innovation_heraldry
@@ -327,6 +333,8 @@
 			NOR = { 
 				government_has_flag = government_is_nomadic
 				government_has_flag = government_is_mandala
+				#AGOT Added
+				government_has_flag = government_is_free_city
 			}
 			trigger_if = {
 				limit = {
@@ -337,8 +345,6 @@
 					tgp_is_ceremonial_liege_trigger = yes
 				}
 			}
-			#AGOT Added
-			NOT = { government_has_flag = government_is_free_city }
 		}
 	}
 	
@@ -461,7 +467,7 @@
 				government_has_flag = government_is_nomadic
 				government_has_flag = government_is_mandala
 				#AGOT Added
-				NOT = { government_has_flag = government_is_free_city }
+				government_has_flag = government_is_free_city
 			}
 		}
 	}
@@ -600,9 +606,9 @@
 				government_has_flag = government_is_japan_administrative
 				government_has_flag = government_is_meritocratic
 				government_has_flag = government_is_steppe_admin
+				#AGOT Added
+				government_has_flag = government_is_free_city
 			}
-			#AGOT Added
-			NOT = { government_has_flag = government_is_free_city }
 		}
 	}
 
@@ -631,6 +637,7 @@
 				government_has_flag = government_is_celestial
 				government_has_flag = government_is_japan_administrative
 				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
 			}
 			is_independent_ruler = no
 		}
@@ -682,6 +689,7 @@
 		}
 	}
 
+	#The prowess succession of LAAMPs is determined in code
 	landless_adventurer_succession_law = {
 		can_keep = {
 			government_has_flag = government_is_landless_adventurer
@@ -1474,7 +1482,10 @@
 			is_independent_ruler = no
 		}
 		should_start_with = {
-			government_has_flag = government_is_meritocratic
+			OR = {
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
 			is_independent_ruler = no
 			custom_tooltip = {
 				text = celestial_military_appointment_allowed_desc
@@ -1545,7 +1556,10 @@
 			is_independent_ruler = no
 		}
 		should_start_with = {
-			government_has_flag = government_is_meritocratic
+			OR = {
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
 			is_independent_ruler = no
 			custom_tooltip = {
 				text = celestial_military_appointment_allowed_desc
@@ -2187,6 +2201,12 @@ succession_gender_laws = {
 				}
 				top_liege = { has_realm_law = female_preference_law }
 			}
+			trigger_else_if = {
+				limit = {
+					culture = { has_cultural_parameter = female_preference_inheritance }
+				}
+				culture = { has_cultural_parameter = female_preference_inheritance }
+			}
 			trigger_else = {
 				custom_description = {
 					text = change_law_female_preference_faith_requirement
@@ -2264,6 +2284,12 @@ succession_gender_laws = {
 					NOT = { government_has_flag = government_is_free_city }
 				}
 				top_liege = { has_realm_law = female_only_law }
+			}
+			trigger_else_if = {
+				limit = {
+					culture = { has_cultural_parameter = female_only_inheritance }
+				}
+				culture = { has_cultural_parameter = female_only_inheritance }
 			}
 			#AGOT Added
 			trigger_else_if = {

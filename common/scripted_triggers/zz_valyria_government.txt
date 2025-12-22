@@ -50,7 +50,6 @@ title_revocation_standard_valid_showing_failures_only_trigger = {
 		}
 	}
 	scope:recipient = {
-		is_busy_in_events_localised = yes
 		NOT = { has_strong_hook = scope:actor }
 	}
 }
