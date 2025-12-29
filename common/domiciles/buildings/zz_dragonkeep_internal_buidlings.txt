@@ -1269,28 +1269,13 @@ dragonkeep_library_archives_03 = {
 	parameters = {
 		estate_increase_physician_aptitude = yes
 		estate_reduced_tutor_cost = yes
+		zz_library_archives_03 = yes
 	}
 
 	character_modifier = {
 		monthly_learning_lifestyle_xp_gain_mult = 0.05
 		owned_legend_spread_mult = 0.05
-		trait_track_drops_of_power_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.1
-		trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.1
-		trait_track_stores_of_power_01_xp_gain_mult = 0.1
-		trait_track_stores_of_power_02_xp_gain_mult = 0.1
-		trait_track_stores_of_power_03_xp_gain_mult = 0.1
-		trait_track_stores_of_power_04_xp_gain_mult = 0.1
-		trait_track_stores_of_power_05_xp_gain_mult = 0.1
-		trait_track_stores_of_power_06_xp_gain_mult = 0.1
-		trait_track_stores_of_power_07_xp_gain_mult = 0.1
-		trait_track_stores_of_power_08_xp_gain_mult = 0.1
-		trait_track_stores_of_power_09_xp_gain_mult = 0.1
-		trait_track_stores_of_power_10_xp_gain_mult = 0.1
+		trait_track_drops_of_power_mult_xp_gain_mult = 0.1
 	}
 	
 	ai_value = {
@@ -1331,28 +1316,13 @@ dragonkeep_library_archives_04 = {
 		estate_unlock_tier_5_education = yes
 		estate_reduced_tutor_cost = yes
 		estate_increased_tutor_aptitude = yes
+		zz_library_archives_04 = yes
 	}
 
 	character_modifier = {
 		monthly_learning_lifestyle_xp_gain_mult = 0.05
 		owned_legend_spread_mult = 0.05
-		trait_track_drops_of_power_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_2_stores_of_power_01_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_2_stores_of_power_02_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_3_stores_of_power_01_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_3_stores_of_power_02_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_3_stores_of_power_03_xp_gain_mult = 0.2
-		trait_track_magic_blood_good_3_stores_of_power_04_xp_gain_mult = 0.2
-		trait_track_stores_of_power_01_xp_gain_mult = 0.2
-		trait_track_stores_of_power_02_xp_gain_mult = 0.2
-		trait_track_stores_of_power_03_xp_gain_mult = 0.2
-		trait_track_stores_of_power_04_xp_gain_mult = 0.2
-		trait_track_stores_of_power_05_xp_gain_mult = 0.2
-		trait_track_stores_of_power_06_xp_gain_mult = 0.2
-		trait_track_stores_of_power_07_xp_gain_mult = 0.2
-		trait_track_stores_of_power_08_xp_gain_mult = 0.2
-		trait_track_stores_of_power_09_xp_gain_mult = 0.2
-		trait_track_stores_of_power_10_xp_gain_mult = 0.2
+		trait_track_drops_of_power_mult_xp_gain_mult = 0.2
 	}
 	
 	ai_value = {

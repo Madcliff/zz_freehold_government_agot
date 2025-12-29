@@ -1,7 +1,5 @@
 ﻿dragonrider_emperor = {
 	default_candidates = { holder_close_family landed_vassal }
-	invested_candidates = { holder_close_extended_family landed_vassal_close_extended_family unlanded_noble_close_extended_family unlanded_noble_house_head holder_house_member unlanded_noble_house_member }
-
 	allow_children = yes
 
 	candidate_score = {
