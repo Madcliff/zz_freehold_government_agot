@@ -6,9 +6,7 @@ zz_count_freehold_male = {							# The key of your title, this is how the game f
 	tier = county								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 zz_count_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -17,9 +15,7 @@ zz_count_freehold_female = {							# The key of your title, this is how the game
 	tier = county								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 zz_duke_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -28,9 +24,7 @@ zz_duke_freehold_male = {							# The key of your title, this is how the game fi
 	tier = duchy								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 zz_duke_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -39,9 +33,7 @@ zz_duke_freehold_female = {							# The key of your title, this is how the game 
 	tier = duchy								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 zz_duke_king_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -50,9 +42,7 @@ zz_duke_king_freehold_male = {							# The key of your title, this is how the ga
 	tier = kingdom								# Which tier must you be?
 	priority = 60000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+	
 }
 zz_duke_king_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -61,9 +51,6 @@ zz_duke_king_freehold_female = {							# The key of your title, this is how the 
 	tier = kingdom								# Which tier must you be?
 	priority = 60000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
 }
 zz_emperor_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -72,9 +59,7 @@ zz_emperor_freehold_male = {							# The key of your title, this is how the game
 	tier = empire								# Which tier must you be?
 	priority = 500000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+	
 }
 zz_emperor_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
@@ -83,9 +68,7 @@ zz_emperor_freehold_female = {							# The key of your title, this is how the ga
 	tier = empire								# Which tier must you be?
 	priority = 500000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-	flavourization_rules = {
-		top_liege = no
-	}
+	
 }
 
 county_freehold = {
@@ -93,18 +76,14 @@ county_freehold = {
 	tier = county
 	priority = 50000
 	governments = { freehold_government }
-	flavourization_rules = {
-		top_liege = no
-	}
+	
 }
 duchy_freehold = {
 	type = title
 	tier = duchy
 	priority = 50000
 	governments = { freehold_government }
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 
 kingdom_freehold  = {
@@ -112,9 +91,7 @@ kingdom_freehold  = {
 	tier = kingdom
 	priority = 73000
 	governments = { freehold_government }
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }
 empire_freehold = {
 	type = title
@@ -122,7 +99,5 @@ empire_freehold = {
 	priority = 10800
 	governments = { freehold_government }
 
-	flavourization_rules = {
-		top_liege = no
-	}
+
 }

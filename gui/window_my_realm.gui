@@ -1503,6 +1503,7 @@ types MyRealmWindow
 						}
 					}
 				}
+				
 
 				spacer = {
 					#AGOT Disabled; this spacer is useful for non-nomads too

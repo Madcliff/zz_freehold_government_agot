@@ -1,0 +1,19 @@
+﻿zz_valyria_tier_check = {
+	trigger_if = {
+		limit = {
+			government_has_flag = government_is_freehold
+			primary_title.tier >= primary_spouse.primary_title.tier 
+		}
+		primary_title = {
+			tier = $TIER$ 
+		}
+	} 
+	trigger_else = {
+		primary_spouse = {
+			government_has_flag = government_is_freehold
+			primary_title = {
+				tier = $TIER$ 
+			}
+		}
+	}
+}
