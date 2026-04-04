@@ -1435,7 +1435,7 @@ windmills_01 = {
 			limit = {
 				NOT = {
 					scope:holder.culture = {
-						has_cultural_parameter = watermills_windmills_cities
+					has_cultural_parameter = watermills_windmills_cities
 					}
 				}
 			}

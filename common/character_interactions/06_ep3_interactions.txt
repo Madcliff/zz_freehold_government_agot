@@ -82,9 +82,7 @@ influence_candidacy_interaction = {
 				holder = { has_realm_law_flag = appointment_type_succession }
 				#AGOT Added
 				holder = { has_realm_law_flag = free_city_election_succession_law }
-				holder = { has_realm_law_flag = dragon_lord_acclamation_succession_law }
-
-				
+				holder = { has_realm_law_flag = dragon_lord_acclamation_succession_law }			
 			}
 		}
 		scope:recipient = { government_allows = administrative }
@@ -97,7 +95,6 @@ influence_candidacy_interaction = {
 				NOT = { government_has_flag = government_has_merit }
 				government_has_flag = government_is_freehold
 			}
-			
 			government_allows = administrative
 		}
 	}

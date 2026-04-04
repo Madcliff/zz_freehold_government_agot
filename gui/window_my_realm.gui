@@ -1414,6 +1414,54 @@ types MyRealmWindow
 		item = {
 			vbox = {
 				name = "realm_law_group" #tutorial uses this
+				text_label_center = {
+					visible = "[GuiLawGroup.GetLawGroup.HasFlag( 'freehold_type_law' )]"
+					text = "[GetLawGroup('freehold_type').GetName]"
+				}
+				button_standard_clean = {
+					datacontext = "[GuiLawGroup.GetLawGroup]"
+					datacontext = "[GuiLawGroup.GetCurrentLevel.GetLaw]"
+					visible = "[LawGroup.HasFlag( 'freehold_type_law' )]"
+					enabled = "[LawGroup.CanRulerChange(GetPlayer)]"
+					tooltip_when_disabled = "[GuiLawGroup.GetCanChangeTooltip]"
+					size = { 200 100 }
+
+					onclick = "[OpenSuccessionLawChangeWindow( GuiLawGroup.Self )]"
+					
+					background = {
+						using = Background_Area
+					}
+					
+					icon = {
+						parentanchor = center
+						size = { 80 80 }
+						texture = "[Law.GetIcon]"
+					}
+					
+					widget = {
+						parentanchor = bottom
+						size = { 100% 30 }
+					
+						background = {
+							using = Background_Area_Dark
+						}
+					
+						text_single = {
+							parentanchor = center
+							position = { 3 -2 }
+					
+							text = "[Law.GetNameNoTooltip]"
+							default_format = "#high;EMP"
+							max_width = 150
+					
+							margin = { 5 0 }
+						}
+					}
+					
+					tooltipwidget = {
+						general_law_tooltip = {}
+					}
+				}
 				datacontext = "[GuiLawGroup.GetLawGroup]"
 				#AGOT Modified
 				# visible = "[And( GuiLawGroup.GetLawGroup.HasFlag( 'realm_law' ), GuiLawGroup.IsAvailable )]"
@@ -1421,12 +1469,15 @@ types MyRealmWindow
 				margin_top = 10
 				spacing = 10
 
+				### FREEHOLD LAW ITEM
+				
 				text_label_center = {
 					#AGOT Modified
 					#visible = "[IsLandlessAdventurer( Character )]"
 					visible = "[And(IsLandlessAdventurer( Character ),Not(IsPirate( Character )))]"
 					text = "[camp_purpose|E]"
 				}
+				
 				#AGOT Added
 				text_label_center = {
 					visible = "[IsPirate( Character )]"
@@ -1503,7 +1554,6 @@ types MyRealmWindow
 						}
 					}
 				}
-				
 
 				spacer = {
 					#AGOT Disabled; this spacer is useful for non-nomads too

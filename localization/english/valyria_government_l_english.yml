@@ -42,6 +42,18 @@
 
 
 
+   # Modifiers
+   freehold_government_vassal_opinion: "[freehold|E] [vassal|E] Opinion"
+   freehold_government_opinion: "[administrative_i|E] [freehold|E] Ruler Opinion"
+
+   
+    freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+   freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+   freehold_government_tax_contribution_mult: "[freehold|E] [vassal|E] [tax|E] [modifier_contribution|E]"
+   freehold_government_levy_contribution_add: "[freehold|E] [vassal|E] [levy|E] [modifier_base_contribution|E]"
+   freehold_government_levy_contribution_mult: "[freehold|E] [vassal|E] [levy|E] [modifier_contribution|E]"
+
+
    ###Flavour Titles 
    
    zz_count_freehold_male: "Freeholder"
@@ -96,6 +108,27 @@
 
    library_archives_04_building: "Mage's Study"
    library_archives_04_domicile_building: "Mage's Archive"
+
+   ## Freehold Laws 
+   
+ # Republic types
+   freehold_type: "Freehold Administration"
+   freehold_type_singular: "$freehold_type$"
+   freehold_type_pass_phrase: "Become a [Law.GetNameNoTooltip]"
+   freehold_type_confirmation_button_text: "Change Freehold Administration"
+   
+   freehold_type_dragonlords:0 "Dragonlord Freehold"
+   freehold_type_dragonlords_effects: "\n#V A realm of individual houses of Dragon Lords. Held together by the potency of Dragonflame, a Dragon Lord Freehold is one of raw military power.#!"
+   freehold_type_magocracy:0 "Magocracy Freehold"
+   freehold_type_magocracy_effects:0 "\n#V By the might of magic, and the twisted mysteries of sorcerious rituals, so is the realm upheld and maintained. A veritable magocracy, with magical might favoured over all other ends.#!"
+   freehold_type_mercantilsim:0 "Merchantlord Freehold"
+   
+   capital_county_is_coastal_desc: "[capital|E] [county|E] is coastal"
+   capital_county_is_inland_desc: "[capital|E] [county|E] is inland"
+   popular_opinion_concept_desc: "[popular_opinion|E]"
+   title_tier_desc: "[title|E] [title_tier|E]"
+   culture_has_ruling_caste_desc: "[culture|E] has [GetCultureTradition('tradition_ruling_caste').GetName] [tradition|E]"
+   you_have_no_coastal_counties_desc: "You do #bold not#! have any coastal [counties|E]"
 
 
    freehold_province_war_law: "[provincial|E] [war|E] Declaration"
@@ -728,7 +761,7 @@
    building_valyrian_roads_01:0 "$building_type_valyrian_roads_01$" 
    building_valyrian_roads_01_desc:0 "$building_type_valyrian_roads_01_desc$" 
 
-   building_type_valyrian_roads_02:0 "$building_type_valyrian_roads_01"
+   building_type_valyrian_roads_02:0 "$building_type_valyrian_roads_01$"
    building_type_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_01_desc$"  
    building_valyrian_roads_02:0 "$building_type_valyrian_roads_02$" 
    building_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_02_desc$" 
@@ -748,3 +781,7 @@
    building_valyrian_walls_01_desc:0 "$building_type_valyrian_walls_01_desc$" 
 
 #"Our military might can be displayed through the construction of a great fortress that accommodates innumerable soldiers. Military commanders will be able to recruit more troops and large garrisons, which in turn will greatly benefit the area's defensive strength."
+
+
+  trait_track_dragon_bond_xp_gain_mult:0 "[GetTrait('dragonrider').GetTraitTrackByKey( 'dragon_bond' ).GetName] [trait_level_track_xp|E] Gain"
+  trait_track_dragon_training_xp_gain_mult:0 "[GetTrait('dragonrider').GetTraitTrackByKey( 'dragon_training' ).GetName] [trait_level_track_xp|E] Gain"

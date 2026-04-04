@@ -35,11 +35,11 @@
   imperial_bureaucracy_3_effects_not_in_prev_vanilla: "$EFFECT_LIST_BULLET$#indent_newline:3 Non-[administrative|E] [vassals|E] can never declare [war|E]#!"
   imperial_bureaucracy_3_effects_not_in_prev_freehold: "$EFFECT_LIST_BULLET$#indent_newline:3 Non-[freehold|E] [vassals|E] can never declare [war|E]#!"
 
-  administrative_government_vassal_opinion: "[SelectLocalization( GetPlayer.GetGovernment.IsType( 'freehold_government' ), 'administrative_government_vassal_opinion_freehold', 'administrative_government_vassal_opinion_vanilla')]"
-  administrative_government_vassal_opinion_vanilla: "[administrative|E] [vassal|E] Opinion"
-  administrative_government_vassal_opinion_freehold: "[freehold|E] [vassal|E] Opinion"
+  #administrative_government_vassal_opinion: "[SelectLocalization( GetPlayer.GetGovernment.IsType( 'freehold_government' ), 'administrative_government_vassal_opinion_freehold', 'administrative_government_vassal_opinion_vanilla')]"
+  #administrative_government_vassal_opinion_vanilla: "[administrative|E] [vassal|E] Opinion"
+  #administrative_government_vassal_opinion_freehold: "[freehold|E] [vassal|E] Opinion"
 
   # Modifiers
-  administrative_government_tax_contribution_add: "[SelectLocalization( GetPlayer.GetGovernment.IsType( 'freehold_government' ), 'administrative_government_tax_contribution_add_freehold', 'administrative_government_tax_contribution_add_vanilla')]"
-  administrative_government_tax_contribution_add_vanilla: "[administrative|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
-  administrative_government_tax_contribution_add_freehold: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+  #administrative_government_tax_contribution_add: "[SelectLocalization( GetPlayer.GetGovernment.IsType( 'freehold_government' ), 'administrative_government_tax_contribution_add_freehold', 'administrative_government_tax_contribution_add_vanilla')]"
+  #administrative_government_tax_contribution_add_vanilla: "[administrative|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+  #administrative_government_tax_contribution_add_freehold: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"

@@ -72,7 +72,7 @@
         government_is_administrative
         government_can_use_tributary_men_at_arms
 
-         # These flags only exist for loc and in-game descriptions
+        # These flags only exist for loc and in-game descriptions
         government_has_merit
         government_has_influence
         government_has_treasury

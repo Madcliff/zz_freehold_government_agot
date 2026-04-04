@@ -1741,27 +1741,17 @@
 	free_city_election_succession_law = {
 		can_keep = {
 			government_allows = administrative
+			is_independent_ruler = yes
 			NOT = { 
 				government_has_flag = government_is_freehold
-			}
-			OR = {
-				is_independent_ruler = yes
-				liege = {
-					agot_has_three_daughters_trigger = yes
-				}
 			}
 		}
 		can_pass = {
 			can_change_succession_law_trigger = yes
 			government_allows = administrative
+			is_independent_ruler = yes
 			NOT = { 
 				government_has_flag = government_is_freehold
-			}
-			OR = {
-				is_independent_ruler = yes
-				liege = {
-					agot_has_three_daughters_trigger = yes
-				}
 			}
 		}
 		can_have = {
@@ -1774,12 +1764,7 @@
 		should_start_with = {
 			has_ep3_dlc_trigger = yes
 			government_allows = administrative
-			OR = {
-				is_independent_ruler = yes
-				liege = {
-					agot_has_three_daughters_trigger = yes
-				}
-			}
+			is_independent_ruler = yes
 		}
 		succession = {
 			order_of_succession = appointment
@@ -1801,12 +1786,7 @@
 		potential = {
 			government_has_flag = government_is_free_city
 			OR = {
-				OR = {
-					is_independent_ruler = yes
-					liege = {
-						agot_has_three_daughters_trigger = yes
-					}
-				}
+				is_independent_ruler = yes
 				agot_is_historical_free_city = yes
 			}
 		}
@@ -1862,6 +1842,7 @@
 			NOT = { government_has_flag = government_is_free_city }
 		}
 	}
+
 }
 
 succession_gender_laws = {
@@ -1943,10 +1924,10 @@ succession_gender_laws = {
 				add = change_succession_law_prestige_cost
 				if = {
 					limit = {
-						culture = { has_cultural_pillar = heritage_rhoynish }
+						culture = { has_cultural_pillar = heritage_rhoynar }
 					}
 					add = {
-						desc = "heritage_rhoynish_trigger"
+						desc = "heritage_rhoynar_trigger"
 						value = change_succession_law_prestige_base
 						multiply = 2
 					}
@@ -2073,10 +2054,10 @@ succession_gender_laws = {
 				add = change_succession_law_prestige_cost
 				if = {
 					limit = {
-						culture = { has_cultural_pillar = heritage_rhoynish }
+						culture = { has_cultural_pillar = heritage_rhoynar }
 					}
 					add = {
-						desc = "heritage_rhoynish_trigger"
+						desc = "heritage_rhoynar_trigger"
 						value = change_succession_law_prestige_base
 						multiply = 1
 					}

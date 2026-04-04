@@ -1,8 +1,300 @@
-﻿#####################
+﻿@freehold_type_prestige_cost = 2000
+@freehold_type_treasury_cost = 1000
+
+# Realm size penalty is X% of base cost per county
+@freehold_type_realm_size_prestige_cost = @[freehold_type_prestige_cost * 0.01]
+@freehold_type_realm_size_treasury_cost = @[freehold_type_treasury_cost * 0.01]
+@freehold_type_realm_size_popular_prestige_cost = @[freehold_type_prestige_cost * 0.1]
+@freehold_type_realm_size_popular_treasury_cost = @[freehold_type_treasury_cost * 0.1]
+
+#####################
 # ADMINISTRATIVE LAWS
 #####################
 @admin_law_cooldown_value = 5
+freehold_type = {
+	default = freehold_type_dragonlords
+	flag = realm_law
+	flag = freehold_type_law
+	
 
+	
+	freehold_type_dragonlords = {
+		pass_phrase =  freehold_type_pass_phrase
+		confirmation_title = freehold_type_pass_phrase
+		confirmation_button_text = freehold_type_confirmation_button_text
+		
+		modifier = {
+			trait_track_dragon_training_xp_gain_mult = 1
+			trait_track_dragon_bond_xp_gain_mult = 1
+			heavy_cavalry_toughness_add = 20
+			heavy_infantry_toughness_add = 35
+			men_at_arms_title_cap = 2
+			men_at_arms_cap = 2
+		}
+
+		flag = uses_camp_purpose
+		flag = can_change_succession_laws
+		flag = can_change_purpose_for_free
+		
+		can_keep = { landed_republican_trigger = yes }
+		
+		can_pass = {
+			custom_tooltip = {
+				text = you_have_no_coastal_counties_desc
+			}
+		}
+		
+		should_start_with = {
+			government_has_flag = government_is_freehold
+			highest_held_title_tier >= tier_duchy
+		}
+
+		pass_cost = {
+			prestige = {
+				add = {
+					value = @freehold_type_prestige_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_prestige_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						capital_county ?= {
+							is_coastal_county = yes
+						}
+					}
+					subtract = {
+						value = @freehold_type_prestige_cost
+						multiply = 0.25
+						desc = capital_county_is_coastal_desc
+					}
+				}
+			}
+			treasury = {
+				add = {
+					value = @freehold_type_treasury_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_treasury_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						capital_county ?= {
+							is_coastal_county = yes
+						}
+					}
+					subtract = {
+						value = @freehold_type_treasury_cost
+						multiply = 0.25
+						desc = capital_county_is_coastal_desc
+					}
+				}
+			}
+		}
+		
+		on_pass = {
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+		
+		requires_approve = { always = no }
+
+		ai_will_do = { # TODO - Add AI logic
+			value = 0
+		}
+	}
+	
+	freehold_type_magocracy = {
+		pass_phrase =  freehold_type_pass_phrase
+		confirmation_title = freehold_type_pass_phrase
+		confirmation_button_text = freehold_type_confirmation_button_text
+		
+		modifier = {
+			zz_drops_of_power_advantage = 250
+			zz_drops_of_power_development_growth_factor = 0.2
+		}
+
+		flag = uses_freehold_type
+		flag = can_change_succession_laws
+		flag = zz_valyria_magocracy_law
+
+		can_keep = { landed_republican_trigger = yes }
+		
+		should_start_with = {
+			government_has_flag = government_is_freehold
+			has_trait = zz_magister
+		}
+
+		pass_cost = {
+			prestige = {
+				add = {
+					value = @freehold_type_prestige_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_prestige_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						capital_county ?= {
+							is_coastal_county = no
+						}
+					}
+					subtract = {
+						value = @freehold_type_prestige_cost
+						multiply = 0.25
+						desc = capital_county_is_inland_desc
+					}
+				}
+			}
+			treasury = {
+				add = {
+					value = @freehold_type_treasury_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_treasury_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						capital_county ?= {
+							is_coastal_county = no
+						}
+					}
+					subtract = {
+						value = @freehold_type_treasury_cost
+						multiply = 0.25
+						desc = capital_county_is_inland_desc
+					}
+				}
+			}
+		}
+		
+		on_pass = {
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+		
+		requires_approve = { always = no }
+
+		ai_will_do = { # TODO - Add AI logic
+			value = 0
+		}
+	}
+	
+	freehold_type_mercantilsim = {
+		pass_phrase =  freehold_type_pass_phrase
+		confirmation_title = freehold_type_pass_phrase
+		confirmation_button_text = freehold_type_confirmation_button_text
+		
+		modifier = {
+			monthly_prestige_gain_mult = 0.15
+			knight_limit = 2
+			feudal_government_tax_contribution_mult = 0.25
+			clan_government_tax_contribution_mult = 0.25
+			republic_government_tax_contribution_mult = 0.25
+		}
+
+		flag = uses_freehold_type
+		flag = can_change_succession_laws
+
+		can_keep = { landed_republican_trigger = yes }
+		
+		should_start_with = {
+			government_has_flag = government_is_freehold
+			capital_county ?= {
+				is_coastal_county = no
+			}
+		}
+
+		pass_cost = {
+			prestige = {
+				add = {
+					value = @freehold_type_prestige_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_prestige_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						culture ?= { has_cultural_tradition = tradition_ruling_caste }
+					}
+					subtract = {
+						value = @freehold_type_prestige_cost
+						multiply = 0.1
+						desc = culture_has_ruling_caste_desc
+					}
+				}
+			}
+			treasury = {
+				add = {
+					value = @freehold_type_treasury_cost
+					desc = BASE
+				}
+				if = {
+					limit = { sub_realm_size > 1 }
+					add = {
+						value = @freehold_type_realm_size_treasury_cost
+						multiply = sub_realm_size # Per county within the (sub)realm
+						desc = realm_size
+					}
+				}
+				if = {
+					limit = {
+						culture ?= { has_cultural_tradition = tradition_ruling_caste }
+					}
+					subtract = {
+						value = @freehold_type_treasury_cost
+						multiply = 0.1
+						desc = culture_has_ruling_caste_desc
+					}
+				}
+			}
+		}
+		
+		on_pass = {
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+		
+		requires_approve = { always = no }
+
+		ai_will_do = { # TODO - Add AI logic
+			value = 0
+		}
+	}
+	
+	
+	
+}
 freehold_province_war_law = {
 	default = freehold_province_war_law_0
 	cumulative = yes
