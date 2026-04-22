@@ -105,9 +105,11 @@ construct_mages_spire = {
 	on_start_build = {}
 	
 	on_complete = {
-		text = great_project_type_construct_great_barracks_province_gains_great_barracks
-		scope:province ?= {
-			set_great_building = zz_mages_tower_tower_01
+		custom_tooltip = {
+			text = great_project_type_construct_mages_spire_province_gains_mages_spire
+			scope:province ?= {
+				set_great_building = zz_mages_tower_tower_01
+			}
 		}
 		great_project_notify_completion = { CHARACTER = scope:owner }
 		scope:founder ?= {
@@ -441,50 +443,52 @@ construct_valyrian_towers = {
 	on_start_build = {}
 	
 	on_complete = {
-		text = great_project_type_construct_great_barracks_province_gains_great_barracks
-		scope:province ?= {
-			add_province_modifier = extra_building_slot
-			if = {
-				limit = {
-					NOT = {
-						has_building_or_higher = valyrian_tower_01
+		custom_tooltip = {
+			text = great_project_type_construct_valyrian_towers_province_gains_valyrian_towers
+			scope:province ?= {
+				add_province_modifier = extra_building_slot
+				if = {
+					limit = {
+						NOT = {
+							has_building_or_higher = valyrian_tower_01
+						}
 					}
+					add_building = valyrian_tower_01
 				}
-				add_building = valyrian_tower_01
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building_or_higher = valyrian_tower_I_01
+				else_if = {
+					limit = {
+						NOT = {
+							has_building_or_higher = valyrian_tower_I_01
+						}
 					}
+					add_building = valyrian_tower_I_01
 				}
-				add_building = valyrian_tower_I_01
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building_or_higher = valyrian_tower_II_01
+				else_if = {
+					limit = {
+						NOT = {
+							has_building_or_higher = valyrian_tower_II_01
+						}
 					}
+					add_building = valyrian_tower_II_01
 				}
-				add_building = valyrian_tower_II_01
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building_or_higher = valyrian_tower_III_01
+				else_if = {
+					limit = {
+						NOT = {
+							has_building_or_higher = valyrian_tower_III_01
+						}
 					}
+					add_building = valyrian_tower_III_01
 				}
-				add_building = valyrian_tower_III_01
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building_or_higher = valyrian_tower_IV_01
+				else_if = {
+					limit = {
+						NOT = {
+							has_building_or_higher = valyrian_tower_IV_01
+						}
 					}
+					add_building = valyrian_tower_IV_01
 				}
-				add_building = valyrian_tower_IV_01
+				
 			}
-			
 		}
 		great_project_notify_completion = { CHARACTER = scope:owner }
 		scope:founder ?= {
@@ -814,10 +818,12 @@ construct_valyrian_roads = {
 	on_start_build = {}
 	
 	on_complete = {
-		text = great_project_type_construct_great_barracks_province_gains_great_barracks
-		scope:province ?= {
-			add_province_modifier = extra_building_slot
-			add_building = valyrian_roads_01
+		custom_tooltip = {
+			text = great_project_type_construct_valyrian_roads_province_gains_valyrian_roads
+			scope:province ?= {
+				add_province_modifier = extra_building_slot
+				add_building = valyrian_roads_01
+			}
 		}
 		great_project_notify_completion = { CHARACTER = scope:owner }
 		scope:founder ?= {
@@ -1149,10 +1155,12 @@ construct_valyrian_walls = {
 	on_start_build = {}
 	
 	on_complete = {
-		text = great_project_type_construct_great_barracks_province_gains_great_barracks
-		scope:province ?= {
-			add_province_modifier = extra_building_slot
-			add_building = valyrian_walls_01
+		custom_tooltip = {
+			text = great_project_type_construct_valyrian_walls_province_gains_valyrian_walls
+			scope:province ?= {
+				add_province_modifier = extra_building_slot
+				add_building = valyrian_walls_01
+			}
 		}
 		great_project_notify_completion = { CHARACTER = scope:owner }
 		scope:founder ?= {

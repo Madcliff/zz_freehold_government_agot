@@ -23,6 +23,11 @@ FIXTITLE_FLAVOUR_1 = {
 				has_character_flag = IGNOREAGOTNAMENONSENSE
 				government_has_flag = government_is_freehold
 				government_has_flag = IGNOREAGOTNAMENONSENSE
+				primary_spouse = {
+					has_character_flag = IGNOREAGOTNAMENONSENSE
+					government_has_flag = government_is_freehold
+					government_has_flag = IGNOREAGOTNAMENONSENSE
+				}
 			}
 		}
 		localization_key = CHARACTER_VIEW_NAME_1

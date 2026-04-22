@@ -194,6 +194,7 @@ adopt_mages_succession_lord_decision = {
 		any_held_title = {
 			is_noble_family_title = yes
 		}
+		always = no
 	}
 
 	is_valid = {
@@ -218,7 +219,7 @@ adopt_mages_succession_lord_decision = {
 			limit = {
 				is_noble_family_title = yes
 			}
-			add_title_law_effects = mage_lord_family_succession_law
+			#add_title_law_effects = mage_lord_family_succession_law
 		}
 	}
 

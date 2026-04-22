@@ -36,12 +36,10 @@ freehold_type = {
 		flag = can_change_succession_laws
 		flag = can_change_purpose_for_free
 		
-		can_keep = { landed_republican_trigger = yes }
+		can_keep = { landed_freehold_trigger = yes }
 		
 		can_pass = {
-			custom_tooltip = {
-				text = you_have_no_coastal_counties_desc
-			}
+			landed_freehold_trigger = yes
 		}
 		
 		should_start_with = {
@@ -123,14 +121,14 @@ freehold_type = {
 		
 		modifier = {
 			zz_drops_of_power_advantage = 250
-			zz_drops_of_power_development_growth_factor = 0.2
+			zz_drops_of_power_holding_construction_piety_cost = 0.2
 		}
 
 		flag = uses_freehold_type
 		flag = can_change_succession_laws
 		flag = zz_valyria_magocracy_law
 
-		can_keep = { landed_republican_trigger = yes }
+		can_keep = { landed_freehold_trigger = yes }
 		
 		should_start_with = {
 			government_has_flag = government_is_freehold
@@ -220,10 +218,10 @@ freehold_type = {
 		flag = uses_freehold_type
 		flag = can_change_succession_laws
 
-		can_keep = { landed_republican_trigger = yes }
+		can_keep = { landed_freehold_trigger = yes }
 		
 		should_start_with = {
-			government_has_flag = government_is_freehold
+			landed_freehold_trigger = yes
 			capital_county ?= {
 				is_coastal_county = no
 			}
@@ -307,6 +305,7 @@ freehold_province_war_law = {
 
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = no
@@ -316,6 +315,7 @@ freehold_province_war_law = {
 		}
 		
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = no
@@ -345,6 +345,7 @@ freehold_province_war_law = {
 
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -367,6 +368,7 @@ freehold_province_war_law = {
 		}
 
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -427,6 +429,7 @@ freehold_province_war_law = {
 		
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -448,6 +451,7 @@ freehold_province_war_law = {
 		}
 
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -502,6 +506,7 @@ freehold_province_war_law = {
 		
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -520,6 +525,7 @@ freehold_province_war_law = {
 		}
 
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -573,6 +579,7 @@ freehold_province_border_law = {
 
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = no
@@ -582,6 +589,7 @@ freehold_province_border_law = {
 		}
 		
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = no
@@ -616,6 +624,7 @@ freehold_province_border_law = {
 
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -637,6 +646,7 @@ freehold_province_border_law = {
 		}
 
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -695,6 +705,7 @@ freehold_province_border_law = {
 
 		can_keep = {
 			realm_law_use_imperial_bureaucracy = yes
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes
@@ -713,6 +724,7 @@ freehold_province_border_law = {
 		}
 
 		can_pass = {
+			landed_freehold_trigger = yes
 			trigger_if = {
 				limit = {
 					is_independent_ruler = yes

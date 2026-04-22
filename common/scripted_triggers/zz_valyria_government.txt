@@ -1,6 +1,6 @@
 ﻿can_have_dragon_lord_acclamation_succession_law_trigger = {
 	has_ep3_dlc_trigger = yes
-	government_allows = administrative
+	government_has_flag = government_is_freehold
 	is_independent_ruler = yes
     has_trait = dragonrider
 }
@@ -19,6 +19,12 @@ can_keep_dragon_lord_acclamation_succession_law_trigger = {
 
 can_change_dragon_lord_acclamation_succession_law_trigger = {
 	has_ep3_dlc_trigger = yes
+	government_has_flag = government_is_freehold
+}
+
+landed_freehold_trigger = {
+	government_has_flag = government_is_freehold
+	is_landed = yes
 }
 
 zz_valyria_freehold_sites = {

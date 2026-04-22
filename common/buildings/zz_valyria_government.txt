@@ -27,7 +27,7 @@
 
 	character_modifier = {
 		owned_legend_spread_mult = 0.5
-		trait_track_drops_of_power_mult_xp_gain_mult = 0.2
+		zz_drops_of_power_holding_construction_piety_cost = 0.2
 	}
 
 	ai_value = {

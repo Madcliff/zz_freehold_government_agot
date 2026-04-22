@@ -36,7 +36,7 @@ zz_valyria_freehold_discovery.9000 = {
 	}
 
 	option = {
-		name = zz_valyria_freehold_discovery.9000.zz
+		name = zz_valyria_freehold_discovery.9000.b
 		trigger = {
 			is_ai = yes 
 		}

@@ -9,11 +9,12 @@
 @holding_illustration_iberian = "gfx/interface/illustrations/holding_types/fp2_city_iberian.dds"
 @holding_illustration_iranian = "gfx/interface/illustrations/holding_types/fp3_city_iranian.dds"
 @holding_illustration_byzantine = "gfx/interface/illustrations/holding_types/ep3_city_byzantine.dds"
+@holding_illustration_trosky = "gfx/interface/illustrations/holding_types/kcd_castle_trosky.dds"
 
 city_01 = {
 	construction_time = slow_construction_time
 
-	#Meshes (Indented for readability)
+	assets = {
 		asset = {
 			type = pdxmesh
 			names = {
@@ -2647,6 +2648,7 @@ city_01 = {
 			graphical_cultures = { japanese_building_gfx }
 			graphical_regions = { graphical_east_asia }
 		}
+	}
 
 	can_construct_potential = {
 		barony_cannot_construct_holding = no
@@ -2827,7 +2829,7 @@ city_01 = {
 city_02 = {
 	construction_time = slow_construction_time
 
-	#Meshes (Indented for readability)
+	assets = {
 		asset = {
 			type = pdxmesh
 			names = {
@@ -5461,6 +5463,7 @@ city_02 = {
 			graphical_cultures = { japanese_building_gfx }
 			graphical_regions = { graphical_east_asia }
 		}
+	}
 
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -5617,7 +5620,7 @@ city_02 = {
 city_03 = {
 	construction_time = slow_construction_time
 
-	#Meshes (Indented for readability)
+	assets = {
 		asset = {
 			type = pdxmesh
 			names = {
@@ -8199,6 +8202,7 @@ city_03 = {
 			graphical_cultures = { japanese_building_gfx }
 			graphical_regions = { graphical_east_asia }
 		}
+	}
 
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -8351,7 +8355,7 @@ city_03 = {
 city_04 = {
 	construction_time = slow_construction_time
 
-	#Meshes (Indented for readability)
+	assets = {
 		asset = {
 			type = pdxmesh
 			names = {
@@ -10933,6 +10937,7 @@ city_04 = {
 			graphical_cultures = { japanese_building_gfx }
 			graphical_regions = { graphical_east_asia }
 		}
+	}
 
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -10960,6 +10965,7 @@ city_04 = {
 		}
 	}
 	cost_gold = main_building_tier_4_cost
+	#AGOT Added
 	next_building = city_05
 
 	levy = poor_building_levy_tier_8
@@ -11138,6 +11144,10 @@ guild_halls_02 = {
 
 	can_construct_potential = {
 		has_building_or_higher = city_01
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
 		culture = {
 			trigger_if = {
 				limit = {
@@ -11146,10 +11156,6 @@ guild_halls_02 = {
 				has_innovation = innovation_crop_rotation
 			}
 		}
-	}
-
-	can_construct_showing_failures_only = {
-		building_requirement_tribal = no
 	}
 
 	cost_gold = normal_building_tier_2_cost
