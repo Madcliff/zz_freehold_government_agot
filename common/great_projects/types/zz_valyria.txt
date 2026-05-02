@@ -132,9 +132,7 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
+
 					}
 				}
 			}
@@ -180,10 +178,6 @@ construct_mages_spire = {
 					text = great_project_contribution_must_be_province_owner_or_above
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
-						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -229,10 +223,6 @@ construct_mages_spire = {
 					text = great_project_contribution_must_be_province_owner_or_above
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
-						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -279,9 +269,6 @@ construct_mages_spire = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -511,9 +498,6 @@ construct_valyrian_towers = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -560,9 +544,6 @@ construct_valyrian_towers = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -609,9 +590,6 @@ construct_valyrian_towers = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -658,9 +636,6 @@ construct_valyrian_towers = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -846,9 +821,6 @@ construct_valyrian_roads = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -895,9 +867,6 @@ construct_valyrian_roads = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -944,9 +913,6 @@ construct_valyrian_roads = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -993,9 +959,6 @@ construct_valyrian_roads = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -1183,9 +1146,6 @@ construct_valyrian_walls = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -1232,9 +1192,6 @@ construct_valyrian_walls = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
@@ -1281,9 +1238,7 @@ construct_valyrian_walls = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
+
 					}
 				}
 			}
@@ -1330,9 +1285,6 @@ construct_valyrian_walls = {
 					OR = {
 						this = scope:great_project.great_project_location.province_owner
 						is_liege_or_above_of = scope:great_project.great_project_location.province_owner
-						has_title = title:e_minister_of_war
-						has_title = title:e_minister_grand_marshal
-						has_title = title:e_minister_of_works
 					}
 				}
 			}
